@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider>
       <MoralisProvider
         appId={process.env.NEXT_PUBLIC_APP_ID}
-        serverUrl={process.env.NEXT_PUBLIC_SERVER_UR}
+        serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}
       >
         <Component {...pageProps} />
       </MoralisProvider>
