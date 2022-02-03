@@ -13,6 +13,7 @@ import Head from "next/head";
 import { useMoralis } from "react-moralis";
 import Header from "../components/Header";
 import Profile from "../components/Profile";
+import Balance from "../components/Balance";
 
 export default function Home() {
   const { isAuthenticated, authenticate, user, logout, isLoggingOut } =
@@ -75,14 +76,15 @@ export default function Home() {
               <TabPanel>
                 <Profile user={user} />
               </TabPanel>
-              <TabPanel>Balance</TabPanel>
+              <TabPanel>
+                <Balance user={user}/>
+              </TabPanel>
               <TabPanel>Transcations</TabPanel>
               <TabPanel>NFTs</TabPanel>
               <TabPanel>Sent ET</TabPanel>
             </TabPanels>
           </Tabs>
         </Box>
-        bold
       </Flex>
     </div>
   );
