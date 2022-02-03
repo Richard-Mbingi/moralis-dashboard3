@@ -1,3 +1,5 @@
+//TODO: Fix balance text link display
+
 import { Divider, Text } from "@chakra-ui/react";
 import Moralis from "moralis";
 import { useEffect, useState } from "react";
@@ -34,7 +36,9 @@ export default function Balance({ user }) {
 
   return (
     <CustomContainer>
-      <Text>My ERC20 Tokens</Text>
+      <Text mb={6} fontSize="xl" fontWeight="bold">
+        My ERC20 Tokens
+      </Text>
       {ethBalance && (
         <Text>
           💰&nbsp; {ethBalance} <b>ETH</b>
