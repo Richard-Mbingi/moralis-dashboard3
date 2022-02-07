@@ -15,6 +15,7 @@ import Header from "../components/Header";
 import Profile from "../components/Profile";
 import Balance from "../components/Balance";
 import Transactions from "../components/Transactions";
+import Nft from "../components/Nft";
 
 export default function Home() {
   const { isAuthenticated, authenticate, user, logout, isLoggingOut } =
@@ -83,7 +84,9 @@ export default function Home() {
               <TabPanel>
                 <Transactions user={user} />
               </TabPanel>
-              <TabPanel>NFTs</TabPanel>
+              <TabPanel>
+                <Nft user={user}/>
+              </TabPanel>
               <TabPanel>Sent ET</TabPanel>
             </TabPanels>
           </Tabs>

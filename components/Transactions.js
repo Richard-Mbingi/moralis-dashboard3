@@ -24,8 +24,6 @@ export default function Transactions({ user }) {
     fetchTransactions();
   }, []);
 
-  console.log(transactions);
-
   return (
     <CustomContainer>
       <Text fontSize="xl" mb="6" fontWeight="bold">
